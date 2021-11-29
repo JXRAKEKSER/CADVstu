@@ -1,0 +1,32 @@
+.check-mark-button{
+    position: absolute;
+    border: none;
+    background-image: url(../../../../source/images/svg-images/CheckMarkButtonIcon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #E5E5E5;
+    width: 15px;
+    height: 44px;
+    top: 63px;
+    right: 65px;
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+
+.check-mark-button_thing{
+    position: absolute;
+    border: none;
+    background-image: url(../../../../source/images/svg-images/CheckMarkFaqIcon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 44px;
+    padding: 0;
+}
+
+.check-mark-button_opened{
+    transform: rotate(90deg);
+}

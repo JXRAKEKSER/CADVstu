@@ -1,0 +1,206 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: #00BBF5;
+    width: 100%;
+}
+
+.header__logo{
+    /*margin: 0 auto 0 0;*/
+}
+
+.header__nav-container{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.header__content-container{
+    display: flex;
+    margin: 17px 108px 52px 108px;
+}
+
+.header__title{
+    
+    width: 100%;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;    
+    
+}
+.column-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin: 0 calc(100% - 90%) 0 0;
+}
+
+.header__img{
+    max-width: 55%;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 1190px) and (min-width: 1130px) {
+    .header__title{
+        font-size: 45px;
+        line-height: 55px;
+    }
+}
+@media screen and (max-width: 1129px) and (min-width: 1111px) {
+    .header__title{
+        font-size: 39px;
+        line-height: 49px;
+    }
+    
+}
+
+@media screen and (max-width: 1110px) and (min-width: 930px) {
+    .header__title{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+}
+
+@media screen and (max-width: 929px) and (min-width: 900px) {
+    .header__title{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 899px) and (min-width: 827px){
+    .header__title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 826px) and (min-width: 725px){
+    .header__title{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 724px) and (min-width: 665px){
+    .header__title{
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+
+@media screen and (max-width: 664px) and (min-width: 500px){
+    .header__title{
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 15px 0;
+    }
+    .header__content-container{
+        display: flex;
+        margin: 17px 52px 26px 52px;
+    }
+    .header__logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 499px) and (min-width: 470px) {
+    .header__title{
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 15px 0;
+    }
+    .header__content-container{
+        display: flex;
+        margin: 17px 0 26px 0;
+    }
+    .header__logo{
+        width: 50px;
+        height: 50px;
+    }
+    .column-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        margin: 0 50px 0 0;
+    }
+    .header__img{
+        max-width: 53%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 469px) and (min-width: 400px){
+    .header__title{
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 10px 0;
+    }
+    .header__nav-container{
+        padding: 0 5px;
+    }
+    .header__content-container{
+        display: flex;
+        margin: 17px 0 26px 0;
+    }
+    .header__logo{
+        width: 30px;
+        height: 30px;
+    }
+    .column-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        margin: 0 35px 0 0;
+    }
+    .header__img{
+        max-width: 53%;
+        object-fit: contain;
+    }
+ }
+
+ @media screen and (max-width: 399px) and (min-width: 320px){
+    .header__title{
+        font-size: 15px;
+        line-height: 23px;
+        margin: 0 0 10px 0;
+    }
+    .header__nav-container{
+        padding: 0 5px;
+    }
+    .header__content-container{
+        display: flex;
+        margin: 17px 0 26px 0;
+    }
+    .header__logo{
+        width: 30px;
+        height: 30px;
+    }
+    .column-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        margin: 0 20px 0 0;
+    }
+    .header__img{
+        max-width: 53%;
+        object-fit: contain;
+    }
+ }

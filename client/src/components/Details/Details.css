@@ -1,0 +1,12 @@
+.details{
+    width: 100%;
+    display: flex;
+    margin: 100px 0 20px 0;
+    
+}
+
+.details .wrapper{
+    display: flex;
+    flex-direction: column;
+    
+}

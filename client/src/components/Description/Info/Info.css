@@ -1,0 +1,94 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 255px;
+    
+}
+.info__person-img{
+    max-width: 49%;
+    object-fit: contain;
+    margin: 0 0 23px 0;
+
+}
+.info__person-role{
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 0 10px 0;
+
+}
+
+.info__person-name{
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+.info__map{
+    margin: 40px 0 0 0;
+}
+.info__documents-button{
+    margin: 40px 0 0 0;
+}
+
+@media screen and (max-width:1154px) and (min-width: 995px) {
+    .info__person-role{
+    
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 0 10px 0;
+    
+    }
+    
+    .info__person-name{
+        
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    .info__map{
+        margin: 35px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 994px) and (min-width: 728px) {
+    .info__person-role{
+    
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 0 10px 0;
+    
+    }
+    
+    .info__person-name{
+        
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    .info__map{
+        margin: 35px 0 0 0;
+    }
+}

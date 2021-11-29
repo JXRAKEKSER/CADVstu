@@ -1,0 +1,36 @@
+.question-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #E5E5E5;
+    border-radius: 10px;
+    width: calc(100% - 209px);
+    align-self: center;
+    margin: 0 0 40px 0;
+}
+.question-card__text{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 63px 0 63px 65px;
+    max-width: 773px;
+}
+.question-card__text_opened{
+    
+    margin: 63px 0 35px 65px;
+}
+
+.question-card__answer{
+    margin: 0 27% 40px 65px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+
+}

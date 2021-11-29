@@ -1,0 +1,4 @@
+{
+    "port":5000,
+    "mongoDBUri":"mongodb+srv://JXRA:masterOfII@cluster0.8jhxe.mongodb.net/mastersProgram?retryWrites=true&w=majority"
+}

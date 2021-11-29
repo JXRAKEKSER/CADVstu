@@ -1,0 +1,19 @@
+.documents-button{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 295px;
+    height: 70px;
+    background: #00BBF5;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    
+    cursor: pointer;
+}
+

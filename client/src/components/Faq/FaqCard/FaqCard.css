@@ -1,0 +1,29 @@
+.faq-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.faq-card__question{
+    max-width: 398px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+}
+
+.faq-card__answer{
+    opacity: 0.6;
+    max-width: 316px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 20px 0 22px 25px;
+}

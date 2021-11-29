@@ -1,0 +1,20 @@
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: #00BBF5;
+}
+
+.footer__title{
+    color: #FFFFFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 710px;
+    margin: 100px 0 30px 114px;
+}
+.footer__contact-form{
+    margin: 0 0 60px 114px;
+}

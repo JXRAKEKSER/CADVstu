@@ -1,0 +1,56 @@
+.quote{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr fit-content(155px);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas:
+    "textq img"
+    "autor img";
+    grid-column-gap: 22px;
+}
+
+.quote__text{
+   
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 10px 0;
+    grid-area: textq;
+}
+.quote__author{
+    
+    font-size: 24px;
+
+    font-style: italic;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    grid-area: autor;
+
+}
+.quote__author-img{
+    grid-area: img;
+    border-radius: 50%;
+    margin: 25px 0 0 0;
+}
+
+@media screen and (max-width:1154px) and (min-width: 900px) {
+    .quote__text{
+        font-size: 22px;
+
+    }    
+    .quote__author{
+        font-size: 22px;
+    }
+    .quote__author-img{
+        
+        margin: 20px 0 0 0;
+        width: 136px;
+        height: 128px;
+    }
+}

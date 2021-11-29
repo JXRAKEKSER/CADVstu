@@ -1,0 +1,91 @@
+.description{
+    width: 100%;
+    display: flex;
+    background-color: #FFFFFF;
+    
+}
+.description .wrapper{
+    display: flex;
+    padding: 0 10px;
+    
+    width: 100%;
+}
+
+.description__pointer{
+    align-self: flex-start;
+    margin: 52px 57px 0 0;
+}
+
+.description__content{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 52px 0 20px 0;
+}
+
+.description__intro{
+    max-width: 650px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left; 
+    margin: 0;
+}
+
+.description__info{
+    margin: 52px 0 0 auto;
+}
+
+.description__quote{
+    margin: 61px 0 0 0;
+}
+
+.description__pitch-title{
+    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 55px 0 0 0;
+}
+
+.descroption__pitch-text{
+    
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;   
+    margin: 40px 0 0 0;
+}
+
+@media screen and (max-width:1154px) and (min-width: 900px) {
+    .description__intro{
+        font-size: 18px;
+        line-height: 50px;
+    }
+    
+    .description__quote{
+        margin: 51px 0 0 0;
+    }
+
+    .description__pitch-title{
+    
+        font-size: 34px;
+        line-height: 28px;
+        font-style: normal;
+        margin: 55px 0 0 0;
+    }
+    
+    .descroption__pitch-text{
+        
+        font-size: 18px;
+        line-height: 45px;
+        margin: 40px 0 0 0;
+    }
+}

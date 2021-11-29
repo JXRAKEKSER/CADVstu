@@ -1,0 +1,66 @@
+@import url(./vendor/normalize.css);
+@import url(./fonts/montserrat.css);
+
+/*Header*/
+@import url(./components/StudyButton/StudyButton.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Navigation/Navigation.css);
+@import url(./components//LocaleSwitch/LocaleSwitch.css);
+
+/*Description*/
+
+@import url(./components/Description/Description.css);
+@import url(./components/Description/Info/Info.css);
+@import url(./components/Description/Quote/Quote.css);
+@import url(./components/Description/Map/Map.css);
+@import url(./components//Description/DocumentsButton/DocumentsButton.css);
+
+/*Icons*/
+@import url(./components/Icons/Icons.css);
+
+/*Details*/
+@import url(./components/./Details/Details.css);
+@import url(./components/Details/QuestionCard/QuestionCard.css);
+@import url(./components/Details/QuestionCard/CheckMarkButton/CheckMarkButton.css);
+
+/*Faq*/
+
+@import url(./components/Faq/Faq.css);
+@import url(./components/Faq/FaqCard/FaqCard.css);
+
+/*Footer*/
+@import url(./components/Footer/Footer.css);
+@import url(./components/Footer/ContactForm/ContactForm.css);
+
+body {
+  
+  font-family: 'Montserrat',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+@media  screen and (min-width: 1281px) {
+  .page{
+    max-width: 100%;
+  }
+  
+  .wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .content{
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
