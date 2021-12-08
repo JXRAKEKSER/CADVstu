@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     background-color: #FFFFFF;
-    
+    position: relative;
 }
 .description .wrapper{
     display: flex;
@@ -64,7 +64,7 @@
     margin: 40px 0 0 0;
 }
 
-@media screen and (max-width:1154px) and (min-width: 900px) {
+@media screen and (max-width:1154px) and (min-width: 728px) {
     .description__intro{
         font-size: 18px;
         line-height: 50px;
@@ -72,6 +72,9 @@
     
     .description__quote{
         margin: 51px 0 0 0;
+    }
+    .description__content{
+        width: 70%;
     }
 
     .description__pitch-title{
@@ -87,5 +90,144 @@
         font-size: 18px;
         line-height: 45px;
         margin: 40px 0 0 0;
+    }
+}
+
+@media screen and (max-width:727px) and (min-width: 600px) {
+    .description__intro{
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .description__quote{
+        margin: 40px 0 0 0;
+    }
+    .description__content{
+        width: 70%;
+    }
+    .description__pointer{
+        margin: 52px 37px 0 0;
+        width: 40px;
+        height: 50px;
+    }
+
+    .description__pitch-title{
+
+        font-size: 34px;
+        line-height: 28px;
+        font-style: normal;
+        margin: 55px 0 0 0;
+    }
+
+    .descroption__pitch-text{
+
+        font-size: 18px;
+        line-height: 45px;
+        margin: 40px 0 0 0;
+    }
+}
+
+@media screen and (max-width:599px) and (min-width: 500px) {
+    .description__intro{
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .description__quote{
+        margin: 35px 0 0 0;
+    }
+    .description__content{
+        width: 75%;
+        margin: 40px 0 20px 0;
+    }
+    .description__pointer{
+        margin: 40px 27px 0 0;
+        width: 35px;
+        height: 45px;
+    }
+
+    .description__pitch-title{
+
+        font-size: 28px;
+        line-height: 40px;
+        font-style: normal;
+        margin: 35px 0 0 0;
+    }
+
+    .descroption__pitch-text{
+
+        font-size: 15px;
+        line-height: 35px;
+        margin: 25px 0 0 0;
+    }
+}
+
+@media screen and (max-width:499px) and (min-width: 426px) {
+    .description__intro{
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .description__quote{
+        margin: 30px 0 0 0;
+    }
+    .description__content{
+        width: 75%;
+        margin: 35px 0 20px 0;
+    }
+    .description__pointer{
+        margin: 35px 17px 0 0;
+        width: 30px;
+        height: 40px;
+    }
+
+    .description__pitch-title{
+
+        font-size: 24px;
+        line-height: 36px;
+        font-style: normal;
+        margin: 30px 0 0 0;
+    }
+
+    .descroption__pitch-text{
+
+        font-size: 12px;
+        line-height: 30px;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width:425px) and (min-width: 320px) {
+    .description__intro{
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .description__quote{
+        margin: 20px 0 0 0;
+    }
+    .description__content{
+        width: 75%;
+        margin: 25px 0 20px 0;
+    }
+    .description__pointer{
+        margin: 25px 10px 0 0;
+        width: 20px;
+        height: 30px;
+    }
+
+    .description__pitch-title{
+
+        font-size: 18px;
+        line-height: 25px;
+        font-style: normal;
+        margin: 20px 0 0 0;
+    }
+
+    .descroption__pitch-text{
+
+        font-size: 12px;
+        line-height: 23px;
+        margin: 15px 0 0 0;
     }
 }

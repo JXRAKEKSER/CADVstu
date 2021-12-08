@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     min-width: 255px;
-    
+    position: relative;
+   
 }
 .info__person-img{
     max-width: 49%;
@@ -39,7 +40,44 @@
     margin: 40px 0 0 0;
 }
 
-@media screen and (max-width:1154px) and (min-width: 995px) {
+.info__menu-button{
+    position: absolute;
+    top: 52px;
+    right: 30px;
+    display: none;
+    background-image: url(../../../source/images/svg-images/SideBarArrowIcon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+
+    width: 30px;
+    height: 34px;
+    border: none;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.info__menu-button_close{
+    transform: rotate(180deg);
+    display: block;
+    background-color: #FFFFFF;
+    align-self: flex-start;
+    margin: 0;
+    position: static;
+    border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width:1100px) and (min-width: 995px) {
+    .info{
+        display: none;
+        
+    }
+   
+    .info__menu-button{
+        display: block;
+
+    }
     .info__person-role{
     
         font-size: 18px;
@@ -67,6 +105,13 @@
 }
 
 @media screen and (max-width: 994px) and (min-width: 728px) {
+    .info{
+        display: none;
+    }
+    .info__menu-button{
+        display: block;
+
+    }
     .info__person-role{
     
         font-size: 16px;
@@ -92,3 +137,101 @@
         margin: 35px 0 0 0;
     }
 }
+@media screen and (max-width:727px) and (min-width: 600px) {
+    .info{
+        display: none;
+    }
+    .info__menu-button{
+        display: block;
+
+    }
+    .info__person-role{
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 0 10px 0;
+
+    }
+
+    .info__person-name{
+
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    .info__map{
+        margin: 35px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 500px) {
+    .info{
+        display: none;
+    }
+    .info__menu-button{
+        display: block;
+        right: 10px;
+        top: 40px
+    }
+}
+@media screen and (max-width: 499px) and (min-width: 426px) {
+    .info{
+        display: none;
+    }
+    .info__menu-button{
+        display: block;
+        right: 10px;
+        top: 35px
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .info{
+        display: none;
+    }
+    .info__menu-button{
+        display: block;
+        right: 10px;
+        top: 25px;
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        background-size: 100%;
+    }
+    .info__person-role{
+
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        text-align: center;
+        margin: 0 0 10px 0;
+
+    }
+
+    .info__person-name{
+
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+    }
+    .info__map{
+        margin: 15px 0 0 0;
+    }
+    .info__documents-button{
+        margin: 20px 0 0 0;
+    }
+
+}
+

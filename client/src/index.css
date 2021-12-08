@@ -5,7 +5,7 @@
 @import url(./components/StudyButton/StudyButton.css);
 @import url(./components/Header/Header.css);
 @import url(./components/Navigation/Navigation.css);
-@import url(./components//LocaleSwitch/LocaleSwitch.css);
+@import url(./components/LocaleSwitch/LocaleSwitch.css);
 
 /*Description*/
 
@@ -13,7 +13,8 @@
 @import url(./components/Description/Info/Info.css);
 @import url(./components/Description/Quote/Quote.css);
 @import url(./components/Description/Map/Map.css);
-@import url(./components//Description/DocumentsButton/DocumentsButton.css);
+@import url(./components/Description/DocumentsButton/DocumentsButton.css);
+@import url(./components/Description/SideBar/SideBar.css);
 
 /*Icons*/
 @import url(./components/Icons/Icons.css);

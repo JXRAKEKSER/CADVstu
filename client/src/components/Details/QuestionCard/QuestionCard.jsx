@@ -7,12 +7,12 @@ export default function QuestionCard({questionData}){
     return(
         <>
             {!isOpened ? (
-            <div className="question-card">
+            <div className="question-card details__question-card">
                 <CheckMarkButton toogleIsOpened = {toogleIsOpened} isOpened={isOpened}/>
                 <h3 className="question-card__text">{questionData.question}</h3>
             </div>
             ) : (
-                <div className="question-card">
+                <div className="question-card details__question-card">
                     <CheckMarkButton toogleIsOpened = {toogleIsOpened} isOpened={isOpened}/>
                     <h3 className="question-card__text question-card__text_opened">{questionData?.question}</h3>
                     <p className="question-card__answer">{questionData?.answer}</p>

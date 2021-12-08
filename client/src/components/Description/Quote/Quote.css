@@ -39,7 +39,7 @@
     margin: 25px 0 0 0;
 }
 
-@media screen and (max-width:1154px) and (min-width: 900px) {
+@media screen and (max-width:1154px) and (min-width: 728px) {
     .quote__text{
         font-size: 22px;
 
@@ -52,5 +52,103 @@
         margin: 20px 0 0 0;
         width: 136px;
         height: 128px;
+    }
+    .quote{
+        grid-template-columns: 1fr fit-content(136px);
+    }
+}
+
+@media screen and (max-width:727px) and (min-width: 650px) {
+    .quote__text{
+        font-size: 20px;
+
+    }
+    .quote__author{
+        font-size: 20px;
+    }
+    .quote__author-img{
+
+        margin: 18px 0 0 0;
+        width: 120px;
+        height: 120px;
+    }
+    .quote{
+        grid-template-columns: 1fr fit-content(136px);
+    }
+}
+@media screen and (max-width: 649px) and (min-width: 600px){
+
+    .quote__text{
+        font-size: 18px;
+
+    }
+    .quote__author{
+        font-size: 18px;
+    }
+    .quote__author-img{
+
+        margin: 18px 0 0 0;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 500px) {
+    .quote{
+        column-gap: 10px;
+    }
+    .quote__text{
+        font-size: 15px;
+
+    }
+    .quote__author{
+        font-size: 15px;
+    }
+    .quote__author-img{
+
+        margin: 10px 0 0 0;
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width:499px) and (min-width: 426px) {
+    .quote{
+        column-gap: 10px;
+    }
+    .quote__text{
+        font-size: 15px;
+
+    }
+    .quote__author{
+        font-size: 15px;
+    }
+    .quote__author-img{
+
+        margin: 10px 0 0 0;
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width:425px) and (min-width: 320px) {
+    .quote{
+        column-gap: 10px;
+    }
+    .quote__text{
+        font-size: 10px;
+        margin: 0 0 7px 0;
+        line-height: 18px;
+
+    }
+    .quote__author{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .quote__author-img{
+
+        margin: 10px 0 0 0;
+        width: 40px;
+        height: 40px;
     }
 }

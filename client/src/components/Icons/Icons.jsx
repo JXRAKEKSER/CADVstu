@@ -12,7 +12,7 @@ export default function Icons({data, foreign}){
     console.log(iconsNode?.programDuration)
     return(
         <section className="icons">
-            <div className="wrapper">
+            {/*<div className="wrapper">*/}
                 <div className="icons__container">
                     <div className="icon icons__icon">
 
@@ -38,7 +38,7 @@ export default function Icons({data, foreign}){
                         <img className="icon__img" src={certificateIcon}/>
                     </div>)}
                 </div>
-            </div>
+            {/*</div>*/}
         </section>
     );
 }

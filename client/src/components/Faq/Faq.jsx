@@ -10,8 +10,8 @@ export default function Faq({data, foreign}){
         faqNode = data?.ru.faq;
     }
     
-    const faqList = faqNode?.map( faqCard => {
-       return <FaqCard data={faqCard} />
+    const faqList = faqNode?.map( (faqCard, i) => {
+       return <FaqCard key={i} data={faqCard} />
     })
     return(
         <section className="faq" id="faq">

@@ -10,12 +10,12 @@ export default function Details({data, foreign}){
         detailsNode = data?.ru.programDetails;
     }
     console.log(detailsNode)
-    const questionList = detailsNode?.map(questionCard => {
-       return <QuestionCard questionData = {questionCard}/>
+    const questionList = detailsNode?.map((questionCard, i) => {
+       return <QuestionCard key={i} questionData = {questionCard}/>
     })
     return(
         <section className="details" id="details">
-            <div className="wrapper">
+            <div className="details__container">
                 {questionList}
             </div>
         </section>

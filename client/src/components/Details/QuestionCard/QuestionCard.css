@@ -1,12 +1,14 @@
 .question-card{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+
+    min-width: 1063px;
     background: #E5E5E5;
     border-radius: 10px;
-    width: calc(100% - 209px);
-    align-self: center;
-    margin: 0 0 40px 0;
+    display: grid;
+    grid-template-rows: fit-content(148px);
+    grid-template-columns: minmax(420px, 768px) 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+        "quest  btn";
 }
 .question-card__text{
     font-size: 30px;
@@ -16,7 +18,8 @@
     letter-spacing: 0em;
     text-align: left;
     margin: 63px 0 63px 65px;
-    max-width: 773px;
+    min-width: 420px;
+    grid-area: quest;
 }
 .question-card__text_opened{
     
@@ -31,6 +34,162 @@
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
-    
+}
+
+@media screen and (max-width: 1150px) {
+    .question-card{
+        min-width: unset;
+
+    }
+    .question-card__text{
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 900px) {
+    .question-card{
+        grid-template-rows: fit-content(148px);
+        grid-template-columns: minmax(420px, 600px) 1fr;
+    }
+    .question-card__text{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 53px 0 53px 65px;
+        max-width: 600px;
+    }
+    .question-card__answer{
+        margin: 0 27% 35px 65px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 700px) {
+    .question-card{
+        grid-template-rows: fit-content(148px);
+        grid-template-columns: minmax(420px, 500px) 1fr;
+    }
+    .question-card__text{
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 43px 0 43px 55px;
+        max-width: 500px;
+    }
+    .question-card__answer{
+        margin: 0 27% 30px 55px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+}
+
+@media screen and (max-width: 699px) and (min-width: 600px) {
+
+    .question-card{
+        grid-template-rows: fit-content(148px);
+        grid-template-columns: minmax(300px, 350px) 1fr;
+    }
+    .question-card__text{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 33px 0 33px 45px;
+
+    }
+    .question-card__answer{
+        margin: 0 27% 25px 45px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+}
+
+@media screen and (max-width: 599px) and (min-width: 500px) {
+
+    .question-card{
+        grid-template-rows: fit-content(148px);
+        grid-template-columns: minmax(300px, 350px) 1fr;
+    }
+    .question-card__text{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 25px 0 25px 35px;
+    }
+    .question-card__text_opened{
+        margin: 25px 0 15px 35px;
+    }
+    .question-card__answer{
+        margin: 0 27% 25px 35px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 499px) and (min-width: 426px) {
+
+    .question-card{
+        grid-template-rows: fit-content(148px);
+        grid-template-columns: minmax(200px, 330px) 1fr;
+    }
+    .question-card__text{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 20px 0 20px 20px;
+    }
+    .question-card__text_opened{
+        margin: 20px 0 15px 20px;
+    }
+    .question-card__answer{
+        margin: 0 27% 25px 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+
+    .question-card{
+        grid-template-rows: fit-content(148px);
+        grid-template-columns: minmax(200px, 300px) 1fr;
+        max-width: 300px;
+    }
+    .question-card__text{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 20px 0 20px 20px;
+    }
+    .question-card__text_opened{
+        margin: 20px 0 15px 20px;
+    }
+    .question-card__answer{
+        margin: 0 27% 25px 20px;
+        font-size: 15px;
+        line-height: 20px;
+    }
 
 }
