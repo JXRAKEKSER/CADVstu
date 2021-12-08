@@ -1,17 +1,12 @@
-import React from "react";
+import React, {useContext, useState} from "react";
 import QuestionCard from "./QuestionCard/QuestionCard";
+import {LocaleContext} from "../../App";
+export default function Details(){
 
-export default function Details({data, foreign}){
-    let detailsNode = null;
-    if(foreign){
-        detailsNode = data?.eng.programDetails;
-    }else{
-        
-        detailsNode = data?.ru.programDetails;
-    }
-    console.log(detailsNode)
-    const questionList = detailsNode?.map((questionCard, i) => {
-       return <QuestionCard key={i} questionData = {questionCard}/>
+    const foreignState = useContext(LocaleContext);
+    const questionList = foreignState?.programDetails?.map((questionCard) => {
+
+       return <QuestionCard key={questionCard._id} questionData = {questionCard}/>
     })
     return(
         <section className="details" id="details">

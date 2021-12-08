@@ -1,15 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
+import {LocaleContext} from "../../App";
+export default function Navigation(){
+    const foreingState = useContext(LocaleContext)
 
-export default function Navigation({foreing}){
     return(
         <div className="navigation">
             <a className="navigation__link" href="#description">
-                {foreing ? "About program" : "О программе"}</a>
+                {foreingState.locale==='eng' ? "About program" : "О программе"}</a>
             <a className="navigation__link" href="#details">
-                {foreing ? "Description" : "Описание"}</a>
+                {foreingState.locale==='eng' ? "Description" : "Описание"}</a>
             <a className="navigation__link" href="#faq">FAQ</a>
             <a className="navigation__link" href="#contact">
-                {foreing ? "Contact Us" : "Связь с нами"}</a>
+                {foreingState.locale==='eng' ? "Contact Us" : "Связь с нами"}</a>
         </div>
     )
 }

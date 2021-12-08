@@ -29,17 +29,22 @@ function App() {
     getData();
     
   },[])
-  const [foreign, setForeign] = useState(false);
+  const [foreign, setForeign] = useState('ru');
   const toogleForeign = (val) => setForeign(val);
+
+    const data = {...fetchData?.data?.[foreign], locale: foreign};
+
+
+
   return (
    
-    <LocaleContext.Provider value={foreign} > 
-      <Header data={fetchData.data} toogle={toogleForeign}/>
-      <Description data={fetchData.data} foreign={foreign}/>
-      <Icons data={fetchData.data} foreign={foreign} />
-      <Details data={fetchData.data} foreign={foreign} />
-      <Faq data={fetchData.data} foreign={foreign} />
-      <Footer foreign={foreign}/>
+    <LocaleContext.Provider value={data} >
+      <Header toogle={toogleForeign}/>
+      <Description />
+      <Icons />
+      <Details />
+      <Faq />
+      <Footer />
    </LocaleContext.Provider>
   );
 }

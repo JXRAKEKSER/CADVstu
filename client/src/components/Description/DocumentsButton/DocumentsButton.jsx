@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function DocumentsButton({foreign}){
+export default function DocumentsButton({locale}){
 
     function handleClick(evt){
         evt.preventDefault();
@@ -9,6 +9,6 @@ export default function DocumentsButton({foreign}){
     return(
         <a href="https://www.vstu.ru/university/fakultety-i-kafedry/fakultet-podgotovki-inostrannykh-spetsialistov/magistratura/" 
             target="_blank"
-        className="documents-button info__documents-button">{foreign ? "Admission rules" : "Правила приема"}</a>
+        className="documents-button info__documents-button">{locale==='eng' ? "Admission rules" : "Правила приема"}</a>
     )
 }

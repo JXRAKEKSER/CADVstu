@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import CheckMarkButton from "../../Details/QuestionCard/CheckMarkButton/CheckMarkButton";
 
-export default function FaqCard({data}){
+export default function FaqCard({data, locale}){
     
     const [isOpened, setIsOpened] = useState(false);
    const toogleIsOpened = (value) => {setIsOpened(!value)}
@@ -9,7 +9,7 @@ export default function FaqCard({data}){
     <>
         {!isOpened ? (
             <div className="faq-card">
-                <span className="faq-card__lable">ответ</span>
+                <span className="faq-card__lable">{locale === 'eng'? 'answer' : 'ответ'}</span>
                 <CheckMarkButton isOpened={isOpened} toogleIsOpened={toogleIsOpened} mixClass = {'check-mark-button_thing'} />
                 <h3 className="faq-card__question">{data?.question}</h3>
             </div>

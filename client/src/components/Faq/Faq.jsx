@@ -1,17 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import FaqCard from "./FaqCard/FaqCard";
-
+import {LocaleContext} from "../../App";
 export default function Faq({data, foreign}){
-    let faqNode = null;
+
+    const foreignState = useContext(LocaleContext);
     
-    if(foreign){
-        faqNode = data?.eng.faq;
-    }else{
-        faqNode = data?.ru.faq;
-    }
-    
-    const faqList = faqNode?.map( (faqCard, i) => {
-       return <FaqCard key={i} data={faqCard} />
+    const faqList = foreignState?.faq?.map( (faqCard, i) => {
+       return <FaqCard key={faqCard._id} data={faqCard} locale={foreignState.locale}/>
     })
     return(
         <section className="faq" id="faq">
@@ -19,7 +14,7 @@ export default function Faq({data, foreign}){
                 <div className="faq__container">
                     <h2 className="faq__pointer">./FAQ</h2>
                     <div className="faq__cards-container">
-                        <h2 className="faq__title">{foreign? "Frequently asked questions" : "Часто задаваемы вопросы"}</h2>
+                        <h2 className="faq__title">{foreignState.locale === 'eng'? "Frequently asked questions" : "Часто задаваемы вопросы"}</h2>
                         {faqList}
                     </div>
                 </div>

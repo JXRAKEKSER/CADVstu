@@ -1,18 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
 
-export default function LocaleSwitch({toogle, foreing}){
+export default function LocaleSwitch({toogle, locale}){
 
     function turnOfEngHandler(){
-        toogle(false);
+        toogle('ru');
     }
     function turnOnEngHandler(){
-        toogle(true);
+        toogle('eng');
     }
-    
+
     return(
         <div className="locale-switch header__locale-switch">
-            <a className={!foreing ? "locale-switch__link locale-switch__link_active" : "locale-switch__link"} onClick={turnOfEngHandler}>Ru</a>
-            <a className={foreing ? "locale-switch__link locale-switch__link_active" : "locale-switch__link"} onClick={turnOnEngHandler}>Eng</a>
+            <a className={!(locale === 'eng') ? "locale-switch__link locale-switch__link_active" : "locale-switch__link"} onClick={turnOfEngHandler}>Ru</a>
+            <a className={locale === 'eng' ? "locale-switch__link locale-switch__link_active" : "locale-switch__link"} onClick={turnOnEngHandler}>Eng</a>
         </div>
     );
 }
