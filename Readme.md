@@ -8,3 +8,6 @@
 **Figma**
 * [Ссылка на макет в Figma](https://www.figma.com/file/flHpTPsgAUBE91jXQLc7AK/VSTU?node-id=7%3A17)
 
+**Heroku**
+* [Ссылка на деплой проекта](https://cad-vstu.herokuapp.com/)
+
